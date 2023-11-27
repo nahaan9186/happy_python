@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>음료 자판기</title>
+</head>
+<body>
+    <h2>음료 자판기</h2>
+    <input type="number" id="cashInput" placeholder="돈을 넣어주세요">
+    <button onclick="inputCash()">돈 넣기</button>
+    <div id="menu" style="display:none;">
+        <p>콜라: 500원</p>
+        <p>사이다: 600원</p>
+        <p>닥터페퍼: 700원</p>
+        <button onclick="order('콜라')">콜라 주문</button>
+        <button onclick="order('사이다')">사이다 주문</button>
+        <button onclick="order('닥터페퍼')">닥터페퍼 주문</button>
+    </div>
+    <p id="message"></p>
+    <p id="change"></p>
+    <button onclick="reset()">다시 시작</button>
+    <script src="app.js"></script>
+</body>
+</html>
